@@ -20,5 +20,8 @@
   "description": "",
   "dependencies": {
     "express": "^5.2.1"
-  }
+  },
+  "scripts": {
+  "build": "echo Build Successful"
+}
 }
