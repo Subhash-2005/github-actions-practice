@@ -1,6 +1,9 @@
-name: Node CI
+name: Full CI Practice
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -15,6 +18,10 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        run: npm installllll
+        run: npm install
+
       - name: Run Build
         run: npm run build
+
+      - name: Success Message
+        run: echo "Pipeline Completed"
